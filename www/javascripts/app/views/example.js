@@ -19,7 +19,7 @@ define(['jquery', 'underscore', 'backbone', 'swig', 'app', 'text!templates/examp
 				_.bindAll(this);
 
 				view.render({
-					'url': 'https://github.com/mademovement/boilerplate-backbone',
+					'url': 'https://github.com/mondorobot/boilerplate-backbone',
 					'heading': 'Backbone Boilerplate'
 				});
 

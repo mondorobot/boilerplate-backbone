@@ -7,8 +7,7 @@
     "requirejs-text": "2.0.5",
     "backbone-amd": "1.1.0",
     "underscore-amd": "1.5.2",
-    "modernizr": "2.6.3",
-    "swig": "0.13.5"
+    "modernizr": "2.6.3"
   },
   "devDependencies": {}
 }
