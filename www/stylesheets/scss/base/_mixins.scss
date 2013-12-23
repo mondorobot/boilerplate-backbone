@@ -26,8 +26,6 @@ $legacy-support-for-ie8: true;
 }
 
 // dynamic sprite
-@import "sprite/*.png";
-
 $sprite: sprite-map("sprite/*.png", $spacing: 13);
 $sprite-background: sprite-url($sprite);
 
