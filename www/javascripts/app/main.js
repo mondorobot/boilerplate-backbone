@@ -22,7 +22,7 @@ require.config({
 		'jquery': '../../bower_components/jquery/jquery',
 		'underscore': '../../bower_components/underscore-amd/underscore',
 		'backbone': '../../bower_components/backbone-amd/backbone',
-		'swig': '../../bower_components/swig/swig',
+		'swig': '../vendor/swig.min',
 		'modernizr': '../../bower_components/modernizr/modernizr',
 		'text': '../../bower_components/requirejs-text/text',
 		'consolelog': '../vendor/consolelog',

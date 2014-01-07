@@ -16,8 +16,6 @@ define(['jquery', 'underscore', 'backbone', 'swig', 'app', 'text!templates/examp
 			'initialize': function() {
 				var view = this;
 
-				_.bindAll(this);
-
 				view.render({
 					'url': 'https://github.com/mondorobot/boilerplate-backbone',
 					'heading': 'Backbone Boilerplate'
