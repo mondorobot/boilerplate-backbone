@@ -27,6 +27,21 @@ module.exports = function(grunt) {
       }
     },
 
+    'complexity': {
+      'app': {
+        'src': [config.javascripts + '/app/**/*.js'],
+        'options': {
+          'breakOnErrors': true,
+          'jsLintXML': 'report.xml', // create XML JSLint-like report
+          'checkstyleXML': 'checkstyle.xml', // create checkstyle report
+          'errorsOnly': false, // show only maintainability errors
+          'cyclomatic': [3, 7, 12], // or optionally a single value, like 3
+          'halstead': [8, 13, 20], // or optionally a single value, like 8
+          'maintainability': 100
+        }
+      }
+    },
+
     'compass': require('./build/config/compass.js')(config),
 
     'cssmin': require('./build/config/cssmin.js')(config),
@@ -47,6 +62,7 @@ module.exports = function(grunt) {
 
   // Default task.
   grunt.registerTask('default', ['compass:app', 'cssmin', 'requirejs']);
+  grunt.registerTask('complexity', 'complexity:app');
   grunt.registerTask('docs', 'yuidoc');
   grunt.registerTask('pretty-js', 'jsbeautifier');
 
@@ -60,5 +76,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-prettysass');
+  grunt.loadNpmTasks('grunt-complexity');
 
 };

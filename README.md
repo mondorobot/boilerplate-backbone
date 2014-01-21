@@ -5,7 +5,6 @@ Introducing the Standards boilerplate w/ Backbone.js. This is a simple applicati
 
 ## Dependencies
 
-- [Ruby + Gem Package Manger  ](http://gembundler.com/)
 - [Bundler Gem Installer](http://gembundler.com/)
 - [Node + NPM Package Manager](https://github.com/joyent/node/wiki/Installation)
 - [Grunt](http://gruntjs.com/getting-started)
