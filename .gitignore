@@ -13,7 +13,7 @@ Thumbs.db
 .sass-cache/
 
 # Ignore generated docs
-docs/
+#docs/
 
 # Ignore modules installed for grunt
 node_modules/

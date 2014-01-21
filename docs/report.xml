@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jslint>
+<file name="www/javascripts/app/app.js">
+  
+</file>
+<file name="www/javascripts/app/collections/example.js">
+  
+</file>
+<file name="www/javascripts/app/helpers/analytics.js">
+  
+  <issue
+    line="81"
+    char="extractParamFromUri"
+    evidence="extractParamFromUri is too complicated"
+    reason="Cyclomatic: 5,
+    Halstead: 15.667
+    | Effort: 6611.2
+    | Volume: 421.99
+    | Vocabulary: 30" />
+  
+  <issue
+    line="139"
+    char="&lt;anonymous&gt;"
+    evidence="&lt;anonymous&gt; is too complicated"
+    reason="Cyclomatic: 3,
+    Halstead: 12.632
+    | Effort: 4568.3
+    | Volume: 361.66
+    | Vocabulary: 31" />
+  
+</file>
+<file name="www/javascripts/app/main.js">
+  
+</file>
+<file name="www/javascripts/app/models/example.js">
+  
+</file>
+<file name="www/javascripts/app/routers/router.js">
+  
+</file>
+<file name="www/javascripts/app/views/example.js">
+  
+</file>
+</jslint>
