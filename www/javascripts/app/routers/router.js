@@ -3,27 +3,27 @@
  */
 
 define(['jquery', 'underscore', 'backbone', 'app', 'views/example'],
-	function($, _, Backbone, App, ExampleView) {
+  function($, _, Backbone, App, ExampleView) {
 
-		'use strict';
+    'use strict';
 
-		var Router = Backbone.Router.extend({
+    var Router = Backbone.Router.extend({
 
-			'routes': {
-				'': 'index'
-			},
+      'routes': {
+        '': 'index'
+      },
 
-			'initialize': function() {
-				log('Router : Initialized');
-			},
+      'initialize': function() {
+        log('Router : Initialized');
+      },
 
-			'index': function() {
-				new ExampleView({
-					'el': '#content'
-				});
-			}
-		});
+      'index': function() {
+        new ExampleView({
+          'el': '#content'
+        });
+      }
+    });
 
-		return Router;
-	}
+    return Router;
+  }
 );

@@ -3,18 +3,18 @@
  */
 
 define(['jquery', 'underscore', 'backbone'],
-	function($, _, Backbone) {
+  function($, _, Backbone) {
 
-		'use strict';
+    'use strict';
 
-		var ExampleModel = Backbone.Model.extend({
+    var ExampleModel = Backbone.Model.extend({
 
-			'defaults': {},
+      'defaults': {},
 
-			'initialize': function() {}
+      'initialize': function() {}
 
-		});
+    });
 
-		return ExampleModel;
-	}
+    return ExampleModel;
+  }
 );

@@ -3,21 +3,21 @@
  */
 
 define(['jquery', 'underscore', 'backbone', 'models/example'],
-	function($, _, Backbone, ExampleModel) {
+  function($, _, Backbone, ExampleModel) {
 
-		'use strict';
+    'use strict';
 
-		var ExampleCollection = Backbone.Collection.extend({
+    var ExampleCollection = Backbone.Collection.extend({
 
-			'model': ExampleModel,
+      'model': ExampleModel,
 
-			'initialize': function() {
+      'initialize': function() {
 
-				log('ExampleCollection : Initialized');
-			}
+        log('ExampleCollection : Initialized');
+      }
 
-		});
+    });
 
-		return ExampleCollection;
-	}
+    return ExampleCollection;
+  }
 );

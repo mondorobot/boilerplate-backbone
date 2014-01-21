@@ -3,36 +3,36 @@
  */
 
 define(['jquery', 'underscore', 'backbone', 'swig', 'app', 'text!templates/example.html'],
-	function($, _, Backbone, swig, App, ExampleTemplate) {
+  function($, _, Backbone, swig, App, ExampleTemplate) {
 
-		'use strict';
+    'use strict';
 
-		var ExampleView = Backbone.View.extend({
+    var ExampleView = Backbone.View.extend({
 
-			'events': {},
+      'events': {},
 
-			'template': swig.compile(ExampleTemplate),
+      'template': swig.compile(ExampleTemplate),
 
-			'initialize': function() {
-				var view = this;
+      'initialize': function() {
+        var view = this;
 
-				view.render({
-					'url': 'https://github.com/mondorobot/boilerplate-backbone',
-					'heading': 'Backbone Boilerplate'
-				});
+        view.render({
+          'url': 'https://github.com/mondorobot/boilerplate-backbone',
+          'heading': 'Backbone Boilerplate'
+        });
 
-				log('ExampleView : Initialized');
-			},
+        log('ExampleView : Initialized');
+      },
 
-			'render': function(content) {
-				var view = this;
+      'render': function(content) {
+        var view = this;
 
-				content = content || {};
+        content = content || {};
 
-				view.$el.html(view.template(content));
-			}
-		});
+        view.$el.html(view.template(content));
+      }
+    });
 
-		return ExampleView;
-	}
+    return ExampleView;
+  }
 );
