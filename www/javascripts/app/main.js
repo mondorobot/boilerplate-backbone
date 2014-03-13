@@ -25,7 +25,7 @@ require.config({
     'swig': '../vendor/swig.min',
     'modernizr': '../../bower_components/modernizr/modernizr',
     'text': '../../bower_components/requirejs-text/text',
-    'consolelog': '../../bower_components/log-require/log',
+    'consolelog': '../vendor/consolelog',
     'facebook': '//connect.facebook.net/en_US/all',
     'google-analytics': '//google-analytics.com/ga',
   }

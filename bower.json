@@ -2,7 +2,6 @@
   "name": "boilerplate",
   "version": "0.1.0",
   "dependencies": {
-    "log-require": "1.0.1",
     "jquery": "1.10.2",
     "requirejs": "2.1.5",
     "requirejs-text": "2.0.5",
