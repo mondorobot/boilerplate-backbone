@@ -46,10 +46,6 @@ module.exports = function(grunt) {
 
     'cssmin': require('./build/config/cssmin.js')(config),
 
-    'qunit': require('./build/config/qunit.js')(config),
-
-    'yuidoc': require('./build/config/yuidoc.js')(config),
-
     'requirejs': require('./build/config/requirejs.js')(config),
 
     'jshint': require('./build/config/jshint.js')(config),
@@ -71,10 +67,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-requirejs');
-  grunt.loadNpmTasks('grunt-contrib-yuidoc');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-prettysass');
   grunt.loadNpmTasks('grunt-complexity');
 
