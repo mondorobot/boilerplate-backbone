@@ -28,9 +28,5 @@ generated/
 sprite-s??????????.png
 sprite-retina-s??????????.png
 
-# It is recomended you add lock files to the 
-# repo in for your projects. Remove the line below.
-*.lock
-
 # Ignore bundler files
 .bundle
