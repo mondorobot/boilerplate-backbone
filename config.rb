@@ -1,3 +1,6 @@
+require 'rake/file_list'
+require 'pathname'
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
@@ -10,5 +13,12 @@ configure :build do
 end
 
 after_configuration do
-  sprockets.append_path File.join root.to_s, "source/bower_components"
+  bower_directory = File.join(root, 'bower_components')
+  sprockets.append_path bower_directory
+
+  sprockets.import_asset 'modernizr/modernizr.js'
+end
+
+after_build do
+  #`find . -type f -path "*.coffee" | grep -v "node_modules/" | xargs coffee-jshint`
 end

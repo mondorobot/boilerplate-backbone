@@ -16,7 +16,7 @@ docs/
 /.bundle
 
 # Ignore bower components
-/source/bower_components
+/bower_components
 
 # Ignore node modules
 /node_modules
