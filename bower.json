@@ -1,13 +1,12 @@
 {
-  "name": "boilerplate",
-  "version": "0.1.0",
+  "name": "boilerplate-prototype",
+  "version": "0.0.0",
+  "authors": [
+    "Zach Payne <uxtronaut@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
   "dependencies": {
-    "jquery": "2.1.1",
-    "requirejs": "2.1.15",
-    "requirejs-text": "2.0.12",
-    "backbone-amd": "1.1.0",
-    "underscore-amd": "1.5.2",
-    "modernizr": "2.8.3"
-  },
-  "devDependencies": {}
+    "foundation": "5.4.3"
+  }
 }

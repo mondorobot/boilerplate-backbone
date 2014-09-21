@@ -1,0 +1,63 @@
+body
+  display: flex
+  height: auto
+  min-height: 100vh
+  flex-direction: column
+
+#content
+  flex: 1
+
+footer
+  background-color: lighten($palette-light-gray, 5%)
+  padding: 5rem 0 1rem 0
+
+  ul
+    list-style-type: none
+    margin: 0 1rem
+
+  li
+    margin-bottom: 1rem
+
+  li, a
+    color: darken($palette-dark-gray, 10%)
+    font-size: rem-calc(16)
+
+  a
+    color: darken($palette-dark-gray, 10%)
+    margin-bottom: 0
+    font-weight: normal
+
+  a:hover
+    color: $palette-black
+
+  .twitter, .twitter:hover
+    color: $palette-twitter
+
+  .facebook, .facebook:hover
+    color: $palette-facebook
+
+  .instagram, .instagram:hover
+    color: $palette-instagram
+
+  .github, .github:hover
+    color: $palette-github
+
+  .rss, .rss:hover
+    color: $palette-rss
+
+  i
+    display: inline-block
+    width: 1.5rem
+    text-align: center
+    font-size: 1.25rem
+    margin-right: .75rem
+    vertical-align: middle
+    position: relative
+    top: rem-calc(-2)
+
+  .icon-heart
+    margin-right: 0
+    font-size: 1rem
+
+  .icon-rss
+    font-size: 1rem

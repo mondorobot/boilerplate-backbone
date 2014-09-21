@@ -1,0 +1,98 @@
+doctype html
+html
+  head
+    title App
+    meta http-equiv="content-type" content="text/html" charset="utf-8"
+
+    = stylesheet_link_tag 'stylesheets/app.css'
+
+    = javascript_include_tag 'bower_components/modernizr/modernizr.js'
+
+  body data-ng-app="App"
+    #content
+      header
+        .row.collapse
+          .small-3.column
+            h1
+              a href="/"
+                | App
+
+          .small-6.column
+            form#search action="/search" data-search="true"
+
+              .row.collapse
+                .small-10.medium-11.column
+                  input type="text" name="term" data-ng-model="search.term"
+
+                .small-2.medium-1.column
+                  button.small.expand type="submit" name="button"
+                    i.icon-search
+
+          .small-3.column
+            a#small-menu-toggle
+              i.icon-menu
+
+            ul#menu
+              li
+                a href="/join"
+                  | Join
+
+              li
+                a href="/signin"
+                  | Sign In
+
+      article
+        == yield
+
+    footer
+      .row
+        .small-6.medium-4.column
+          ul
+            li
+              a href="#" Join App
+            li
+              a href="#" Sign In
+            li
+              a href="#" About
+            li
+              a href="#" Contact
+            li
+              a href="#" FAQ
+
+        .small-6.medium-4.column
+          ul
+            li
+              a.twitter href="#"
+                i.icon-twitter
+                | Twitter
+            li
+              a.facebook href="#"
+                i.icon-facebook
+                | Facebook
+            li
+              a.instagram href="#"
+                i.icon-instagram
+                | Instagram
+            li
+              a.github href="#"
+                i.icon-github
+                | Github
+            li
+              a.rss href="#"
+                i.icon-rss
+                | RSS
+
+        .small-12.medium-4.column
+          ul
+            li
+              = Faker::Lorem.sentence(15)
+            li
+              | &#0169; &nbsp;
+              = Date.today.year
+              | &nbsp; App Company
+            li
+              | Made with&nbsp;
+              i.icon-heart
+              | &nbsp;in Boulder, Colorado
+
+    = javascript_include_tag 'javascripts/main.js'

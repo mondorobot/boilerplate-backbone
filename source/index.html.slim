@@ -1,0 +1,54 @@
+section#splash
+  .row
+    .small-12.column
+      h2 Welcome
+
+      h3 Welcome to this awesome app...
+
+  .row
+    .small-12.column
+      .buttons
+        a#signin.button.radius href="/signin"
+          | Sign In
+
+        a#join.button.radius.secondary href="/join"
+          | Join
+
+section#about
+  .row
+    .small-4.column
+      .block
+        i.icon-ticket
+        h5 App is your ticket to ride
+
+    .small-4.column
+      .block
+        i.icon-network
+        h5 Connect to App's network
+
+    .small-4.column
+      .block
+        i.icon-statistics
+        h5 App gives you unparalleled analytics
+
+  .row
+    .small-12.medium-6.column
+      .panel
+        h3 App is awesome
+
+        p= Faker::Lorem.paragraph
+
+    .small-12.medium-6.column
+      .panel
+        h3 App is fast
+
+        p= Faker::Lorem.paragraph
+
+section#news
+  .row
+    .small-12.column
+      - 3.times do
+        .post
+          h3= Faker::Lorem.sentence
+
+          p= Faker::Lorem.paragraph(20)
