@@ -1,16 +1,9 @@
 {
-  "name": "GruntBuildApp",
+  "name": "MondoRobotBoilerplate",
   "version": "0.0.1",
   "dependencies": {
-    "underscore": "1.7.0",
-    "grunt": "0.4.5",
-    "grunt-complexity": "0.1.4",
-    "grunt-jsbeautifier": "0.2.7",
-    "grunt-contrib-cssmin": "0.10.0",
-    "grunt-contrib-compass": "0.9.1",
-    "grunt-contrib-requirejs": "0.4.4",
-    "grunt-contrib-watch": "0.6.1",
-    "grunt-contrib-jshint": "0.10.0",
-    "grunt-prettysass": "0.2.3"
+    "coffee-jshint": "0.1.2",
+    "complexity-report": "1.0.3",
+    "csscomb": "2.0.4"
   }
 }

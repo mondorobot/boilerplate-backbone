@@ -1,12 +1,14 @@
 {
-  "name": "boilerplate-prototype",
-  "version": "0.0.0",
+  "name": "mondorobot-boilerplate",
+  "version": "0.0.1",
   "authors": [
     "Zach Payne <uxtronaut@gmail.com>"
   ],
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "foundation": "5.4.3"
+    "foundation": "5.4.3",
+    "underscore": "1.7.0",
+    "requirejs": "2.1.15"
   }
 }
