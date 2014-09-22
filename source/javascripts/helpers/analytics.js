@@ -26,7 +26,7 @@ define(['jquery', 'underscore', 'app'],
         window._gaq.push(['_setAccount', options.gaAccountId]);
 
         this.delegateEvents(options.trackingMap);
-        Lumberjack('Analytics : Initialized');
+        log('Analytics : Initialized');
         return this;
       },
 

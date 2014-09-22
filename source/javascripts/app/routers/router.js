@@ -14,7 +14,7 @@ define(['jquery', 'underscore', 'backbone', 'app', 'views/example'],
       },
 
       'initialize': function() {
-        Lumberjack('Router : Initialized');
+        log('Router : Initialized');
       },
 
       'index': function() {
