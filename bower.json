@@ -9,6 +9,10 @@
   "dependencies": {
     "foundation": "5.4.3",
     "underscore": "1.7.0",
-    "requirejs": "2.1.15"
+    "backbone": "1.1.2",
+    "requirejs": "2.1.15",
+    "requirejs-text": "2.0.12",
+    "swig": "https://github.com/ravenac95/swig-bower.git",
+    "lumberjack": "1.0.9"
   }
 }

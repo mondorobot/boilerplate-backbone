@@ -6,7 +6,7 @@
 
 require.config({
   'waitSeconds': 0,
-  'baseUrl': 'javascripts/app',
+  'baseUrl': 'javascripts',
   'shim': {
     'facebook': {
       'exports': 'FB'
@@ -19,19 +19,19 @@ require.config({
     }
   },
   'paths': {
-    'jquery': '../../bower_components/jquery/jquery',
-    'underscore': '../../bower_components/underscore-amd/underscore',
-    'backbone': '../../bower_components/backbone-amd/backbone',
-    'swig': '../vendor/swig.min',
-    'modernizr': '../../bower_components/modernizr/modernizr',
-    'text': '../../bower_components/requirejs-text/text',
-    'consolelog': '../vendor/consolelog',
+    'jquery': 'jquery/dist/jquery',
+    'underscore': 'underscore/underscore',
+    'backbone': 'backbone/backbone',
+    'swig': 'swig/swig',
+    'modernizr': 'modernizr/modernizr',
+    'text': 'requirejs-text/text',
+    'lumberjack': 'lumberjack/src/lumberjack',
     'facebook': '//connect.facebook.net/en_US/all',
     'google-analytics': '//google-analytics.com/ga',
   }
 });
 
-require(['underscore', 'backbone', 'app', 'routers/router', 'consolelog'],
+require(['underscore', 'backbone', 'app', 'routers/router', 'lumberjack'],
   function(_, Backbone, App, Router) {
 
     // Bind backbone pub/sub events to App module

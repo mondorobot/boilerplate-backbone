@@ -1,14 +1,36 @@
 doctype html
+/! [if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]
+/! [if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]
+/! [if IE 8]><html class="no-js lt-ie9"><![endif]
+/! [if gt IE 8]><html class="no-js"><![endif]
 html
   head
     title App
-    meta http-equiv="content-type" content="text/html" charset="utf-8"
+    meta http-equiv="content-type" content="text/html" charset="utf-8"/
+
+    meta name="description" content=""/
+
+    meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/
+
+    meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/
+
+    meta property="og:site_name" content=""/
+    meta property="og:title" content=""/
+    meta property="og:description" content=""/
+    meta property="og:url" content=""/
+    meta property="og:image" content=""/
+    meta property="og:type" content="website"/
+    meta property="og:locale" content="en_US"/
+
+    link rel="shortcut icon" href="images/favicon.png"/
+
+    /! [if IE 8]><script src="javascripts/bower_components/modernizr/modernizr.js"></script><![endif]
 
     = stylesheet_link_tag 'stylesheets/app.css'
 
-    = javascript_include_tag 'bower_components/modernizr/modernizr.js'
+    = javascript_include_tag 'modernizr/modernizr.js'
 
-  body data-ng-app="App"
+  body
     #content
       header
         .row.collapse
@@ -42,6 +64,14 @@ html
                   | Sign In
 
       article
+        noscript
+          p
+            | Javascript is currently disabled.
+            | Please
+            a href="http://www.google.com/support/bin/answer.py?answer=23852" target="_blank"
+              | enable javascript
+            | for the optimal experience.
+
         == yield
 
     footer
@@ -95,4 +125,5 @@ html
               i.icon-heart
               | &nbsp;in Boulder, Colorado
 
-    = javascript_include_tag 'javascripts/main.js'
+    #app-settings
+    = javascript_include_tag 'requirejs/require.js', :data => {:main => 'javascripts/main'}

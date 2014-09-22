@@ -13,7 +13,7 @@ define(['jquery', 'underscore', 'backbone', 'models/example'],
 
       'initialize': function() {
 
-        log('ExampleCollection : Initialized');
+        Lumberjack('ExampleCollection : Initialized');
       }
 
     });

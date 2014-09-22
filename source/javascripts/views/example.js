@@ -21,7 +21,7 @@ define(['jquery', 'underscore', 'backbone', 'swig', 'app', 'text!templates/examp
           'heading': 'Backbone Boilerplate'
         });
 
-        log('ExampleView : Initialized');
+        Lumberjack('ExampleView : Initialized');
       },
 
       'render': function(content) {

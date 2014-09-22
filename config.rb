@@ -7,16 +7,24 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+set :bower_dir, File.join(root, 'bower_components')
+
 configure :build do
   activate :minify_javascript
   activate :asset_hash
 end
 
 after_configuration do
-  bower_directory = File.join(root, 'bower_components')
-  sprockets.append_path bower_directory
+  sprockets.append_path bower_dir
 
   sprockets.import_asset 'modernizr/modernizr.js'
+  sprockets.import_asset 'jquery/dist/jquery.js'
+  sprockets.import_asset 'requirejs/require.js'
+  sprockets.import_asset 'requirejs-text/text.js'
+  sprockets.import_asset 'underscore/underscore.js'
+  sprockets.import_asset 'backbone/backbone.js'
+  sprockets.import_asset 'swig/swig.js'
+  sprockets.import_asset 'lumberjack/src/lumberjack.js'
 end
 
 after_build do
