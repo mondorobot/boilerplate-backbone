@@ -1,155 +1,124 @@
 Mondo Robot Backbone Boilerplate
 ===
 
-Mondo Robot's standard boilerplate for backbone.js apps. This is a simple application setup to jump start your projects.
+Mondo Robot's standard boilerplate for backbone.js apps
+
+This is a simple application setup to jump start your projects.
+
+## Overview
+
+This boilerplate uses Middleman to generate a static site using a modern toolset that includes
+
+* Zurb Foundation for responsive styling and css structure
+* Icon Fonts for vector iconography
+* Image Sprite generation
+* Sass for CSS preprocessing
+* CoffeeScript for JS preprocessing
+* Asset digest for cache busting
+* CSS and JS concatenation and minification
+* I18n translations (server-side)
+* Acceptance testing via RSpec + Capybara
+* TODO: Unit testing via Karma + Jasmine
+
+TODO: Add overview for backbone app
 
 ## Dependencies
 
-- [Bundler Gem Installer](http://gembundler.com/)
-- [Node + NPM Package Manager](https://github.com/joyent/node/wiki/Installation)
-- [Grunt](http://gruntjs.com/getting-started)
-- [Bower](http://bower.io)
+**TODO: Add installation instructions**
 
-**Installing Grunt:**
-
-Our boilerplate requires Grunt `>=0.4.0`. If you've never installed Grunt, or you have installed an earlier version, visit [Grunt's Getting Started Guide](http://gruntjs.com/getting-started) before proceeding.
-
-**Installing Bower:**
-
-Our boilerplate uses Bower for front-end package management. If you have never installed Bower, you can install it globally using npm:
-
-```shell
-npm install -g bower
-```
+* Ruby + RubyGems
+  Reccommend using the [Postmodern Ruby Environment](http://yousefourabi.com/blog/2013/11/the-postmodern-ruby-environment/)) consisting of [ruby-install](https://github.com/postmodern/ruby-install) and [chruby](https://github.com/postmodern/chruby)
+* NPM
+* Bower
+* PhantomJS for headless acceptance testing
 
 ## Installation
 
-**Install gems:**  
+* Install gems
 
-```shell
-bundle install
-```
+  ```shell
+  bundle install
+  ```
 
-**Install node modules:**
+* Install node packages
 
-```shell
-npm install
-```
+  ```shell
+  npm install
+  ```
 
-**Install bower packages:**
+* Install bower packages
 
-```shell
-bower install
-```
+  ```shell
+  bower install
+  ```
 
 ## Components
 
 ### Gems
 
-* [compass](https://github.com/Compass/compass)
+* middleman
+  [github](https://github.com/middleman/middleman) [docs](http://middlemanapp.com/)
+  Watches and compiles site on request in development, builds static site for production deployment
 
-  Library of Sass components and mixins. Processes .sass and .scss files into .css
-  Setup in `build/config/watch.js` to run with
+* slim
+  [github](https://github.com/slim-template/slim) [docs](http://slim-lang.com/)
+  HTML templates with significant whitespace
 
-  ```shell
-  grunt watch
-  ```
+* faker
+  [github](https://github.com/stympy/faker) [docs](http://rubydoc.info/github/stympy/faker/master/frames)
+  Generates example data for design and testing
 
-* [sass](https://github.com/sass/sass)
+* awesome_print
+  [github](https://github.com/michaeldv/awesome_print)
+  Pretty printing for ruby console/log
 
-  CSS Preprocessor
+* middleman-pry
+  [github](https://github.com/AndrewKvalheim/middleman-pry)
+  Adds pry to the middleman console for debugging / REPL driven dev. [More on pry](http://pryrepl.org/)
+
+* [rspec](https://github.com/rspec/rspec)
+  Ruby testing framework
+
+* capybara
+  [github](https://github.com/jnicklas/capybara)
+  Automated acceptance testing abstraction for Rack::Test
+
+* [poltergeist](https://github.com/teampoltergeist/poltergeist)
+  Driver for Capybara for headless webkit testing via PhantomJS
 
 ### NPM Packages
 
-* [underscore](https://github.com/jashkenas/underscore)
+**TODO: These should run in the `after_build` hook within `config.rb`**
 
-  JS Utility library
+* coffee-jshint
+  [github](https://github.com/Clever/coffee-jshint)
 
-* [grunt](https://github.com/gruntjs/grunt)
+* complexity-report
+  [github](https://github.com/philbooth/complexity-report)
 
-  JS Task runner
-
-  List available tasks with
-
-  ```shell
-  grunt --help
-  ```
-
-* [grunt-complexity](https://github.com/vigetlabs/grunt-complexity)
-
-  Analyzes your JS code for complexity
-
-  ```shell
-  mkdir docs #if it does not already exist
-  grunt complexity
-  ```
-
-* [grunt-jsbeautifier](https://github.com/vkadam/grunt-jsbeautifier)
-
-  Reformats, reindents, unpacks, and unobfuscates JS
-
-  ```shell
-  grunt jsbeautifier
-  ```
-
-* [grunt-contrib-cssmin](https://github.com/gruntjs/grunt-contrib-cssmin)
-
-  Minifies and concatenates CSS
-
-  ```shell
-  grunt cssmin
-  ```
-
-* [grunt-contrib-compass](https://github.com/gruntjs/grunt-contrib-compass)
-
-  Compass + Grunt integration
-
-* [grunt-contrib-requirejs](https://github.com/gruntjs/grunt-contrib-requirejs)
-
-  RequireJS integration with Grunt
-
-* [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch)
-
-  Adds the `watch` task to Grunt
-
-* [grunt-contrib-jshint](https://github.com/gruntjs/grunt-contrib-jshint)
-
-  JS validation
-
-  ```shell
-  grunt jshint
-  ```
-
-* [grunt-prettysass](https://github.com/brandonminch/grunt-prettysass)
-
-  Prettifies and alphabetizes your SASS
-
-  ```shell
-  grunt prettysass
-  ```
+* csscomb
+  [github](https://github.com/csscomb/csscomb.js)
+  [docs](http://csscomb.com/)
 
 ### Bower Packages
 
-* [jquery](https://github.com/jquery/jquery)
+* foundation
+  [github](https://github.com/zurb/foundation) [docs](http://foundation.zurb.com/docs/)
 
-  Everyone's favorite DOM manipulation and JS utility library
+* underscore
+  [github](https://github.com/jashkenas/underscore) [docs](http://underscorejs.org/)
 
-* [requirejs](https://github.com/jrburke/requirejs/)
+* backbone
+  [github](https://github.com/jashkenas/backbone) [docs](http://backbonejs.org/)
 
-  Handles dependencies and loading in your JS app
+* requirejs
+  [github](https://github.com/jrburke/requirejs) [docs](http://requirejs.org/)
 
-* [requirejs-text](https://github.com/requirejs/text)
+* requirejs-text
+  [github](https://github.com/requirejs/text)
 
-  Load HTML/XML/SVG text files with RequireJS
+* swig
+  [github](https://github.com/paularmstrong/swig/) [docs](http://paularmstrong.github.io/swig/)
 
-* [backbone-amd](https://github.com/amdjs/underscore)
-
-  AMD fork of backbone for loading with RequireJS
-
-* [underscore-amd](https://github.com/amdjs/underscore)
-
-  AMD fork of underscore for loading with RequireJS
-
-* [modernizr](https://github.com/Modernizr/Modernizr)
-
-  Adds HTML5 support for legacy browsers
+* lumberjack
+  [github](https://github.com/jbail/lumberjack)
