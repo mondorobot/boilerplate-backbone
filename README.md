@@ -54,6 +54,8 @@ This boilerplate uses [Middleman](http://middlemanapp.com/) to generate a static
   middleman s
   ```
 
+  See it in your browser at `http://localhost:4567`
+
 * Run your tests
   ```shell
   rspec spec/
@@ -61,8 +63,10 @@ This boilerplate uses [Middleman](http://middlemanapp.com/) to generate a static
 
 * Build your app
   ```shell
-  middleman
+  middleman build
   ```
+
+* You can navigate your built app by pointing MAMP's `Document Root` at your apps `build/` folder, then point your browser to `http://localhost:8888`
 
 * TODO: Deploy your app
 
