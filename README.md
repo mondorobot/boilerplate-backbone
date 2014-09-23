@@ -78,32 +78,35 @@ This boilerplate uses [Middleman](http://middlemanapp.com/) to generate a static
 
   [github](https://github.com/middleman/middleman) | [docs](http://middlemanapp.com/)
 
-  * Watches and compiles preprocessed files on request during development
-  * Builds static site for production deployment
-  * Uses the (Sprockets)[https://github.com/sstephenson/sprockets] gem - the base for Rails asset pipeline
+  Watches and compiles preprocessed files on request during development
+
+  Builds static site for production deployment
+
+  Uses the (Sprockets)[https://github.com/sstephenson/sprockets] gem - the base for Rails asset pipeline
 
 * **slim**
 
   [github](https://github.com/slim-template/slim) | [docs](http://slim-lang.com/)
 
-  * HTML templating language with significant whitespace
+  HTML templating language with significant whitespace
 
 * **sass**
+
   [github](https://github.com/sass/sass) | [docs](http://sass-lang.com/documentation/file.SASS_REFERENCE.html)
 
-  * CSS preprocessor language with significant whitespace
+  CSS preprocessor language with significant whitespace
 
 * **coffeescript**
 
   [github](https://github.com/jashkenas/coffeescript) | [docs](http://coffeescript.org/)
 
-  * JS preprocessor language with significant whitespace
+  JS preprocessor language with significant whitespace
 
 * **faker**
 
   [github](https://github.com/stympy/faker) [docs](http://rubydoc.info/github/stympy/faker/master/frames)
 
-  * Generates example data for design and testing
+  Generates example data for design and testing
 
 * **awesome_print**
 
@@ -158,26 +161,40 @@ This boilerplate uses [Middleman](http://middlemanapp.com/) to generate a static
 
   [github](https://github.com/zurb/foundation) | [docs](http://foundation.zurb.com/docs/)
 
+  Sass-based Responsive styling framework
+
 * **underscore**
 
   [github](https://github.com/jashkenas/underscore) | [docs](http://underscorejs.org/)
+
+  JS Utility
 
 * **backbone**
 
   [github](https://github.com/jashkenas/backbone) | [docs](http://backbonejs.org/)
 
+  JS Framework
+
 * **requirejs**
 
   [github](https://github.com/jrburke/requirejs) | [docs](http://requirejs.org/)
+
+  JS dependency management
 
 * **requirejs-text**
 
   [github](https://github.com/requirejs/text)
 
+  Require text files with requirejs
+
 * **swig**
 
   [github](https://github.com/paularmstrong/swig/) | [docs](http://paularmstrong.github.io/swig/)
 
+  JS app templating language
+
 * **lumberjack**
 
   [github](https://github.com/jbail/lumberjack)
+
+  JavaScript logging utility
