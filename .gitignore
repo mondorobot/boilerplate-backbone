@@ -27,4 +27,9 @@ build
 # Ignore cache
 .sass-cache
 .cache
+
+# Ignore temporary files
 tmp
+
+# Ignore the reports dir
+report
