@@ -198,3 +198,15 @@ This boilerplate uses [Middleman](http://middlemanapp.com/) to generate a static
   [github](https://github.com/jbail/lumberjack)
 
   JavaScript logging utility
+
+### Rake Tasks
+
+* `rake import:icons[<zipfile>]`
+
+  Will update the icon font from a .zip file from Icomoon. The task assumes the .zip file is in your `~\Downloads` directory.
+
+  ```shell
+  rake icons:update\["icons.zip"\]
+  ```
+
+  Will extract the zip, copy the font files, and update the _icons.css.scss stylesheet
