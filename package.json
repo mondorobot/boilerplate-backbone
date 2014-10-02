@@ -2,7 +2,6 @@
   "name": "MondoRobotBoilerplate",
   "version": "0.0.1",
   "dependencies": {
-    "coffee-jshint": "0.1.2",
     "plato": "1.2.0",
     "csscomb": "2.0.4"
   }
