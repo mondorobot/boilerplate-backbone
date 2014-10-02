@@ -13,17 +13,18 @@ Thumbs.db
 docs/
 
 # Ignore bundler config
-/.bundle
+.bundle
 
 # Ignore bower components
-/bower_components
+bower_components
 
 # Ignore node modules
-/node_modules
+node_modules
 
 # Ignore the build directory
-/build
+build
 
 # Ignore cache
-/.sass-cache
-/.cache
+.sass-cache
+.cache
+tmp

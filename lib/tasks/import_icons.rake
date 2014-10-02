@@ -1,9 +1,9 @@
 namespace :icons do
 
-  directory 'tmp'
+  directory 'tmp/iconfont'
 
   desc "Update icons from Icomoon .zip file"
-  task :update, [:zipfile] => [:tmp] do |t, args|
+  task :update, [:zipfile] => [:'tmp/iconfont'] do |t, args|
     begin
       # Set absolute zipfile path in ~/Downloads
       zipfile = File.join(ENV['HOME'], 'Downloads', args[:zipfile].shellescape)
