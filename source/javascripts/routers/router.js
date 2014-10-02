@@ -14,7 +14,7 @@ define(['jquery', 'underscore', 'backbone', 'app', 'views/example'],
       },
 
       'initialize': function() {
-        log('Router : Initialized');
+        log('debug', 'Router : Initialized');
       },
 
       'index': function() {
