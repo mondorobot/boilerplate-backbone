@@ -27,7 +27,3 @@ after_configuration do
   sprockets.import_asset 'swig/swig.js'
   sprockets.import_asset 'lumberjack/src/lumberjack.js'
 end
-
-after_build do
-  #`find . -type f -path "*.coffee" | grep -v "node_modules/" | xargs coffee-jshint`
-end
