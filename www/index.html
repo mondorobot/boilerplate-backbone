@@ -23,30 +23,29 @@
     <link rel="shortcut icon" href="images/favicon.png" />
 
     <!-- BEGIN:PROD
-    <link rel="stylesheet" href="stylesheets/generated/app.min.css" />
+    <link rel="stylesheet" href="stylesheets/generated/modern.min.css" />
     END:PROD -->
 
     <!-- BEGIN:DEV -->
-    <link rel="stylesheet" href="stylesheets/generated/app.css" />
+    <link rel="stylesheet" href="stylesheets/generated/modern.css" />
+    <!--[if lt IE 9]><link rel="stylesheet" href="stylesheets/generated/legacy.css" /><![endif]-->
     <!-- END:DEV -->
 
     <script src="javascripts/bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
-
-    <!-- BEGIN: section-main -->
-    <section id="main">
+    <header class="header" role="banner">
+    </header>
+    <!-- END: header -->
+    <div id="main" class="main" role="main">
       <noscript>
-        <p>Javascript is currently disabled. Please <a href="http://www.google.com/support/bin/answer.py?answer=23852" target="_blank">enable javascript</a> for the optimal experience!</p>
+        <p>Javascript is currently disabled. Please <a href="http://www.google.com/support/bin/answer.py?answer=23852" target="_blank">enable javascript</a> for an optimal experience.</p>
       </noscript>
-
-      <header></header>
-
-      <section id="content"></section>
-
-      <footer></footer>
-    </section>
-    <!-- END: section-main -->
+    </div>
+    <!-- END: main -->
+    <footer class="footer" role="contentinfo">
+    </footer>
+    <!-- END: footer -->
 
     <!-- BEGIN:PROD
     <script id="app-settings" type="application/json">

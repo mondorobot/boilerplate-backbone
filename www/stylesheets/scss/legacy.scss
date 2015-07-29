@@ -1,0 +1,10 @@
+/* ---------------------------------------------------------------------
+ Legacy - Import responsive styles so older browsers consume them
+------------------------------------------------------------------------ */
+
+@import "helpers/vars";
+@import "helpers/vendor";
+@import "helpers/utils";
+
+@import "screen_md";
+@import "screen_lg";

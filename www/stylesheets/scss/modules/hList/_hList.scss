@@ -1,0 +1,22 @@
+/* ---------------------------------------------------------------------
+ Horizontal List
+------------------------------------------------------------------------ */
+
+.hList {
+  margin: 0;
+  padding: 0;
+}
+
+.hList > * {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.hList > * + * {
+  margin-left: 10px;
+}
+
+.hList_loose > * + * {
+  margin-left: 20px;
+}

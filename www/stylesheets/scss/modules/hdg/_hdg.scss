@@ -1,0 +1,21 @@
+/* ---------------------------------------------------------------------
+ Headings
+------------------------------------------------------------------------ */
+
+.hdg {
+  font-weight: $FONT_WEIGHT_NORMAL;
+}
+
+.hdg_1 { @include remify(3.6); }
+.hdg_2 { @include remify(3.0); }
+.hdg_3 { @include remify(2.4); }
+.hdg_4 { @include remify(1.8); }
+.hdg_5 { @include remify(1.6); }
+
+.mix-hdg_caps {
+  text-transform: uppercase;
+}
+
+.mix-hdg_bold {
+  font-weight: $FONT_WEIGHT_BOLD;
+}

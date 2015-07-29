@@ -1,0 +1,16 @@
+//----------------------------------------------------------------------
+// Mixin function declarations
+//----------------------------------------------------------------------
+
+@mixin remify($sizeValue) {
+  font-size: ($sizeValue * $FONT_SIZE_BASE_INT) + px; // Fallback for legacy browsers
+  font-size: $sizeValue + rem;
+}
+
+@mixin clearfix() {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
